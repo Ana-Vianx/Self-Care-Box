@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self Care Box - Skin Care e Makeup</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">
+            <img src="LogoSelfCareBox branco.png" alt="Logo Self Care Box">
+            <h1>Self Care Box</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Introdução -->
+    <section id="introducao" class="introducao">
+        <h2>Seu momento de bem-estar começa aqui!</h2>
+        <p> Seja bem-vindo(a) ao nosso site! Aqui você encontrará um questionário para te conhecermos melhor e ajudar na sua rotina de beleza. <br><br>
+            A Self Care Box é uma caixa de produtos de beleza feminina totalmente personalizada. Você nos conta suas preferências e necessidades, e nós montamos um kit exclusivo para você.
+        </p>
+    </section>
+
+    <!-- Seção de Perguntas -->
+    <section id="perguntas" class="perguntas">
+        <h3>Qual seu tipo de pele?</h3>
+        <form>
+            <label><input type="radio" name="pele" value="Seca"> Seca</label>
+            <label><input type="radio" name="pele" value="Mista"> Mista</label>
+            <label><input type="radio" name="pele" value="Oleosa"> Oleosa</label>
+            <label><input type="radio" name="pele" value="Sensível"> Sensível</label>
+        </form>
+
+        <h3>Quanto tempo você costuma dedicar ao autocuidado?</h3>
+        <form>
+            <label><input type="radio" name="tempo" value="Menos de 5 Min"> Menos de 5 minutos</label>
+            <label><input type="radio" name="tempo" value="5 a 15 min"> De 5 a 15 minutos</label>
+            <label><input type="radio" name="tempo" value="Mais de 15 min"> Mais de 15 minutos</label>
+        </form>
+
+        <h3>Qual tipo de aroma você prefere?</h3>
+        <form>
+            <label><input type="radio" name="aroma" value="Cítrico"> Cítrico</label>
+            <label><input type="radio" name="aroma" value="Floral"> Floral</label>
+            <label><input type="radio" name="aroma" value="Amadeirado"> Amadeirado</label>
+            <label><input type="radio" name="aroma" value="Herbal"> Herbal</label>
+        </form>
+
+        <h3>Como você lida com o estresse no dia a dia?</h3>
+        <form>
+            <label><input type="radio" name="hobbie" value="Menos de 5 Min"> Pratico meditação/ioga</label>
+            <label><input type="radio" name="hobbie" value="5 a 15 min"> Tomo chás relaxantes</label>
+            <label><input type="radio" name="hobbie" value="Mais de 15 min"> Uso técnicas de respiração</label>
+            <label><input type="radio" name="hobbie" value="Mais de 15 min"> Pratico esportes</label>
+        </form>
+        <h3>Gostaria de receber ferramentas de massagem e relaxamento?</h3>
+        <form>
+            <label><input type="radio" name="hobbie" value="Menos de 5 Min"> Sim</label>
+            <label><input type="radio" name="hobbie" value="5 a 15 min"> Não</label>
+        </form>
+        <h3>Qual seu maior objetivo com o autocuidado?</h3>
+        <form>
+            <label><input type="radio" name="hobbie" value="Menos de 5 Min"> Relaxar e reduzir o estresse</label>
+            <label><input type="radio" name="hobbie" value="5 a 15 min"> Cuidar melhor da pele</label>
+            <label><input type="radio" name="hobbie" value="Mais de 15 min"> Criar uma rotina mais saudável</label>
+        </form>
+        <h3>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </h3>
+    </section>
+
+    <!-- Galeria de Produtos -->
+    <section class="gallery">
+        <div class="produto">
+            <img src="gel-de-limpeza-facial-hidratante-revitalift-hialurnico-80g-pack.png" alt="Gel de limpeza facial">
+            <p>Revitalift Hialurônico</p>
+        </div>
+        <div class="produto">
+            <img src="Neutrogena Hydro boost.png" alt="Hidratante Neutrogena">
+            <p>Neutrogena Hydro Boost</p>
+        </div>
+        <div class="produto">
+            <img src="protetor loreal.png" alt="Protetor solar L'Oréal">
+            <p>Protetor Solar L'Oréal FPS 50</p>
+        </div>
+        <div class="produto">
+            <img src="mascara.png" alt="Máscara facial">
+            <p>Máscara de Coco</p>
+        </div>
+        <div class="produto">
+            <img src="guacha.png" alt="Massageador Gua Sha">
+            <p>Gua Sha Quartzo Rosa</p>
+        </div>
+        <div class="produto">
+            <img src="cha leao.jpg" alt="CHá">
+            <p>Chá de Capim Sidreira</p>
+        </div>
+    </section>
+
+    <!-- Seção de Checkout -->
+    <section class="checkout">
+        <h2>Finalize seu pedido</h2>
+
+        <div class="valor-total">
+            <h3>Valor Total:</h3>
+            <p>R$ <span id="valor">166,06</span></p>
+            <img src="qrcode.jpg" alt="qrcode">
+            <p>QR Code de pagamento</p>
+        </div>
+
+        <form id="form-endereco">
+            <input type="text" id="nome" placeholder="Nome Completo" required>
+            <input type="text" id="endereco" placeholder="Endereço" required>
+            <input type="text" id="cidade" placeholder="Cidade" required>
+            <input type="text" id="cep" placeholder="CEP" required>
+            <input type="tel" id="telefone" placeholder="Telefone" required>
+            <button type="submit">Finalizar Pedido</button>
+        </form>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 Self Care Box. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        document.getElementById("form-endereco").addEventListener("submit", function (event) {
+            event.preventDefault();
+            alert("Pedido finalizado com sucesso! Sua Self Care Box está a caminho. 💖");
+        });
+    </script>
+
+</body>
+</html>
+
